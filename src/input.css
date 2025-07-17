@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "inter", sans-serif;
+  --color-primary: oklch(55.4% 0.046 257.417);
+
+  .inter-<uniquifier > {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+}
+
+.navbar-fixed {
+  @apply fixed z-[9999] bg-white/60 backdrop-blur-sm drop-shadow-lg;
+}
