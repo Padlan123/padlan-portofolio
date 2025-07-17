@@ -3,13 +3,6 @@
 @theme {
   --font-inter: "inter", sans-serif;
   --color-primary: oklch(55.4% 0.046 257.417);
-
-  .inter-<uniquifier > {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
 }
 
 .navbar-fixed {
