@@ -6,7 +6,7 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     </style>
-    <link rel="stylesheet" href="./src/minify.css" />
+    <link rel="stylesheet" href="./src/output.css" />
     <title>Web Personal</title>
   </head>
   <body class="font-inter">
@@ -53,7 +53,7 @@
           </div>
         </div>
       </nav>
-      <div class="hidden lg:hidden absolute top-0 right-0" id="nav-menu">
+      <div class="lg:hidden absolute top-0 right-0 hidden" id="nav-menu">
         <div class="fixed inset-0 z-50"></div>
         <div
           class="fixed right-0 z-50 w-full bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
@@ -90,10 +90,11 @@
         </div>
       </div>
     </header>
-    <main class="pt-22">
+    <main>
+      <!-- section home -->
       <section
         id="home"
-        class="lg:pt-0 bg-gradient-to-b from-slate-300/60 via-slate-200 to-slate-100"
+        class="bg-gradient-to-r from-violet-500/50 from-10% via-sky-500/50 via-30% to-emerald-500/50 to-90% mt-22 h-dvh lg:pt-0"
       >
         <div class="lg:px-12 lg:py-24 max-w-full">
           <div class="flex flex-wrap w-full">
@@ -115,7 +116,7 @@
                 >
               </h2>
               <p
-                class="text-base font-medium text-secondary max-w-lg w-full mb-10 md:text-base leading-relaxed"
+                class="text-base font-medium text-secondary max-w-lg w-full mb-10 md:text-base"
               >
                 Sudah mengerjakan beberapa projek dengan skala kecil dan
                 profesional dalam mengerjakan tugas<span
@@ -143,23 +144,25 @@
           </div>
         </div>
       </section>
-      <section id="about" class="pt-32 pb-32 dark:bg-dark">
+      <!-- section home end
+        -->
+      <section id="about" class="mt-32 pb-32 dark:bg-dark">
         <div class="container max-w-full">
           <div class="flex flex-wrap pl-4 md:pl-10 lg:w-full lg:justify-around">
             <div class="w-full px-4 mb-6 lg:w-1/2 lg:max-w-lg lg:pt-10">
               <h4 class="font-bold uppercase text-primary text-3xl mb-3">
                 Tentang Saya
               </h4>
-              <ul
-                class="mt-8 font-medium text-secondary mb-6 text-base lg:text-lg"
-              >
-                <li>Nama Lengkap: Muhamad Padlan Padilah</li>
-              </ul>
+              <p class="font-semibold mb-6 text-xl lg:text-lg">
+                Nama Lengkap:
+                <span class="font-bold text-2xl">Muhamad Padlan Padilah</span>
+              </p>
               <p class="font-medium text-secondary mb-6 text-base lg:text-lg">
-                fokus berkarir di bidang web development, Saya mencari
-                kesempatan untuk berkontribusi dalam sebuah projek di industri
-                teknologi khususnya di web development untuk mengaplikasikan
-                ilmu yang saya miliki
+                Lulusan SMK Budi Bakti Ciwidey jurusan
+                <span class="font-light">Rekayasa Perangkat Lunak</span>
+                dengan pengalaman dalam pembuatan dan perancangan website.
+                Memiliki minat mendalam pada pengembangan perangkat lunak
+                terkhusus di website.
               </p>
             </div>
             <div class="w-full px-4 lg:w-1/2 lg:max-w-lg">
@@ -172,13 +175,15 @@
                 Ada pepatah mengatakan "tak kenal maka tak sayang", jadi ayo
                 berteman sekarang.
               </p>
-              <div class="flex items-center">
+              <div
+                class="flex items-center bg-slate-800 rounded-2xl justify-center py-2 px-6"
+              >
                 <!-- youtube -->
 
                 <a
                   href="https://youtube.com/channel/UCixx72fojjLrBuwQfTvdDaw"
                   target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border text-slate-300 border-slate-300 hover:text-white"
                 >
                   <svg
                     class="fill-current"
@@ -199,7 +204,7 @@
                 <a
                   href="https://instagram.com/padlan_padilah123"
                   target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-300 text-slate-300 hover:text-white"
                 >
                   <svg
                     class="fill-current"
@@ -219,7 +224,7 @@
                 <a
                   href="https://www.linkedin.com/in/muhamad-padlan-padilah123/"
                   target="_blank"
-                  class="w-9 h-9 mr-3 flex justify-center items-center text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  class="w-9 h-9 mr-3 flex justify-center items-center text-slate-300 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -239,7 +244,7 @@
                 <a
                   href="https://github.com/Padlan123"
                   target="_blank"
-                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+                  class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-slate-300 hover:text-white"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -314,6 +319,8 @@
           </div>
         </div>
       </section>
+
+      <!-- section kemampuan -->
       <section id="skils" class="pt-36 pb-32 bg-slate-700">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">
@@ -323,9 +330,7 @@
             >
               Menguasai bahasa
             </h2>
-            <p
-              class="font-medium text-md text-secondary text-slate-400 md:text-lg"
-            >
+            <p class="font-medium text-md text-slate-300 md:text-lg">
               Beberapa bahasa yang saya kuasai dalam skala kecil atau dasar
             </p>
           </div>
@@ -334,7 +339,7 @@
           <div class="flex flex-wrap items-center justify-center">
             <a
               href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-80 lg:mx-6 xl:mx-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -361,7 +366,7 @@
             </a>
             <a
               href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-80 lg:mx-6 xl:mx-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -388,7 +393,7 @@
             </a>
             <a
               href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-80 lg:mx-6 xl:mx-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -420,7 +425,7 @@
             </a>
             <a
               href="#"
-              class="max-w-[120px] mx-4 py-4 grayscale opacity-60 transition duration-300 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8"
+              class="max-w-[120px] mx-4 py-4 opacity-80 lg:mx-6 xl:mx-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -440,6 +445,9 @@
           </div>
         </div>
       </section>
+      <!-- section kemampuan end -->
+
+      <!-- section kontak -->
       <section id="contact" class="pt-36 pb-32">
         <div class="w-full px-4">
           <div class="max-w-xl mx-auto text-center mb-16">

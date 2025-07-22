@@ -2,7 +2,7 @@
 
 @theme {
   --font-inter: "inter", sans-serif;
-  --color-primary: oklch(55.4% 0.046 257.417);
+  --color-primary: #212529;
 }
 
 .navbar-fixed {
